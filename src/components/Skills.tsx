@@ -5,28 +5,28 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: [
-        { name: "JavaScript", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "Java", level: 75 },
-        { name: "TypeScript", level: 70 },
+        { name: "JavaScript", level: 44 },
+        { name: "Python", level: 36 },
+        { name: "Java", level: 25 },
+        { name: "TypeScript", level: 30 },
       ]
     },
     {
       title: "Web Technologies",
       skills: [
-        { name: "React", level: 80 },
-        { name: "Node.js", level: 75 },
+        { name: "React", level: 40 },
+        { name: "Node.js", level: 45 },
         { name: "HTML/CSS", level: 90 },
-        { name: "MongoDB", level: 70 },
+        { name: "MongoDB", level: 22 },
       ]
     },
     {
       title: "Tools & Platforms",
       skills: [
-        { name: "Git", level: 85 },
-        { name: "Docker", level: 65 },
-        { name: "AWS", level: 60 },
-        { name: "Linux", level: 75 },
+        { name: "Git", level: 55 },
+        { name: "Docker", level: 35 },
+        { name: "AWS", level: 29 },
+        { name: "Linux", level: 25 },
       ]
     }
   ];
@@ -35,9 +35,9 @@ const Skills = () => {
     <section className="py-section bg-gradient-subtle">
       <div className="max-w-content mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Skills & Expertise
-          </h2>
+<h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 animate-fade-in">
+  Skills & Expertise
+</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Technologies and tools I work with, constantly learning and improving
           </p>

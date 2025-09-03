@@ -1,9 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Github, Youtube, Globe, Mail, MessageCircle } from "lucide-react";
+import { Github, Youtube, Globe, Mail, MessageCircle, Rocket, User } from "lucide-react";
 
 const Contact = () => {
   const contacts = [
+    {
+  title: "LinkedIn",
+  description: "Connect with me and explore my journey",
+  icon: User,
+  url: "https://www.linkedin.com/in/indrasenareddybala",
+  buttonText: "Visit LinkedIn"
+},
     {
       title: "GitHub",
       description: "Explore my repositories and contributions",
@@ -12,16 +19,9 @@ const Contact = () => {
       buttonText: "Follow on GitHub"
     },
     {
-      title: "YouTube",
-      description: "Watch my learning journey and tutorials",
-      icon: Youtube,
-      url: "https://www.youtube.com/@18slicesofme",
-      buttonText: "Subscribe"
-    },
-    {
       title: "Blog",
       description: "Read about my experiences and insights",
-      icon: Globe,
+      icon: Rocket,
       url: "https://www.18Slicesofme.blogspot.com",
       buttonText: "Read Blog"
     }
@@ -68,36 +68,64 @@ const Contact = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="text-center">
-          <Card className="max-w-md mx-auto bg-card border-border">
-            <CardHeader>
-              <div className="mx-auto w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
-                <MessageCircle className="w-6 h-6 text-accent-foreground" />
-              </div>
-              <CardTitle className="text-xl font-medium text-card-foreground">
-                Start a Conversation
-              </CardTitle>
-              <CardDescription className="text-muted-foreground">
-                Have a project idea or want to collaborate? I'd love to hear from you.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <Button
-                variant="default"
-                size="lg"
-                className="w-full hover-lift"
-                asChild
-              >
-                <a href="mailto:contact@indrasena.dev">
-                  <Mail className="w-5 h-5 mr-2" />
-                  Get in Touch
-                </a>
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
-      </div>
+
+        <div className="w-full px-4 py-10">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    
+    {/* Contact Card */}
+    <div className="text-center">
+      <Card className="bg-card border border-border shadow-md rounded-lg p-6">
+        <CardHeader>
+          <div className="mx-auto w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+            <MessageCircle className="w-6 h-6 text-accent-foreground" />
+          </div>
+          <CardTitle className="text-xl font-medium text-card-foreground">
+            Start a Conversation
+          </CardTitle>
+          <CardDescription className="text-muted-foreground">
+            Have a project idea or want to collaborate? I'd love to hear from you.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <Button
+            variant="default"
+            size="lg"
+            className="w-full hover-lift"
+            asChild
+          >
+            <a
+              href="mailto:indrasena1807@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail className="w-5 h-5 mr-2" />
+              Get in Touch
+            </a>
+          </Button>
+        </CardContent>
+      </Card>
+    </div>
+
+    {/* Substack Embed */}
+    <div className="bg-white border border-muted rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+      <h3 className="text-xl font-semibold text-foreground mb-2">Subscribe For Newsletter</h3>
+      <p className="text-muted-foreground mb-4">
+      </p>
+      <iframe
+        src="https://18slicesofme.substack.com/embed"
+        width="100%"
+        height="215"
+        style={{ border: "1px solid #2dec27ff", background: "red" }}
+        frameBorder="0"
+        scrolling="no"
+        className="rounded-md"
+      />
+    </div>
+
+  </div>
+</div>
+       
+</div>
     </section>
   );
 };

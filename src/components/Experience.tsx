@@ -1,41 +1,57 @@
 import { Calendar, MapPin } from "lucide-react";
 
 const Experience = () => {
-  const experiences = [
+const experiences = [
+  {
+    title: "Contributor - Viswam.ai",
+    company: "CultureMapper Platform",
+    location: "Remote",
+    duration: "June, 2025 - Present",
+    description: [
+      "Developed contributor portal and analytics dashboard",
+      "Implemented frontend using React and TailwindCSS",
+      "Integrated backend APIs for user data and content management"
+    ]
+  },
     {
-      title: "Senior Software Developer",
-      company: "Tech Solutions Inc.",
-      location: "Remote",
-      duration: "2023 - Present",
-      description: [
-        "Led development of scalable web applications using React and Node.js",
-        "Mentored junior developers and conducted code reviews",
-        "Implemented CI/CD pipelines reducing deployment time by 60%"
-      ]
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Ltd.",
-      location: "Hyderabad, India",
-      duration: "2021 - 2023",
-      description: [
-        "Built responsive web applications serving 10k+ users",
-        "Collaborated with cross-functional teams using Agile methodology",
-        "Optimized database queries improving application performance by 40%"
-      ]
-    },
-    {
-      title: "Software Developer Intern",
-      company: "StartUp Hub",
-      location: "Bangalore, India",
-      duration: "2020 - 2021",
-      description: [
-        "Developed RESTful APIs using Python and Django",
-        "Contributed to open-source projects and documentation",
-        "Participated in hackathons and won 2nd place in TechFest 2021"
-      ]
-    }
-  ];
+    title: "AI Content Creator",
+    company: "Self-driven Projects (Telugu AI Blog & YouTube)",
+    location: "Remote",
+    duration: "2024 - Present",
+    description: [
+      "Created 50+ Telugu AI video scripts with structured storytelling",
+      "Built a blog in English explaining Tech Related concepts",
+      "Designed 50+ custom YouTube thumbnails using Canva for portfolio"
+    ]
+  },
+
+  {
+    title: "Software Developer (Personal Projects)",
+    company: "Independent",
+    location: "Remote",
+    duration: "2023 - Present",
+    description: [
+      "Built end-to-end web applications using GoLang, React, and Node.js",
+      "Developed Python ML project for automatic image background removal",
+      "Created structured JSON/CSV automation prompts for AI-generated content",
+      "Deployed applications on Docker and AWS platforms",
+      "Built responsive web applications for various use cases",
+      "Collaborated with cross-functional teams using Agile methodology"
+    ]
+  },
+
+      {
+    title: "Data Analytics Intern",
+    company: "Tableau Internship Project",
+    location: "Remote",
+    duration: "May, 2025 - July, 2025",
+    description: [
+      "Worked on 'Measuring the Pulse of Prosperity: An Index of Economic Freedom Analysis'",
+      "Built interactive dashboards and visualizations in Tableau",
+      "Documented project on GitHub and managed workflow using Kanban boards"
+    ]
+  },
+];
 
   return (
     <section className="py-section">
